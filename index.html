@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <!-- Nav -->
+    <div class="nav container">
+      <a href="#" class="logo">Ecommerce</a>
+      <!-- cart icon -->
+      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+      <!-- cart -->
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- content -->
+        <div class="cart-content">
+          
+          <!-- <div class="cart-box">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/df15123c7d8e48f6bd23ada1014020ac_9366/Ao_Thun_Designed_for_Movement_AEROREADY_DJen_HF7214_01_laydown.jpg" alt="" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-product-title">Earbuds</div>
+              <div class="cart-price">$25</div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <!-- Remove cart 
+            <i class="fa-solid fa-trash cart-remove"></i>
+          </div> -->
+        </div>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!-- buy button -->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!-- cart close -->
+        <i id="close-cart" class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- shop -->
+  <section class="shop container">
+    <h2 class="section-title">Shop Products</h2>
+    <!-- content -->
+    <div class="shop-content">
+      <!-- box 1 -->
+      <div class="product-box">
+        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/df15123c7d8e48f6bd23ada1014020ac_9366/Ao_Thun_Designed_for_Movement_AEROREADY_DJen_HF7214_01_laydown.jpg" alt="" class="product-img">
+        <h2 class="product-title">AEROREADY SHIRT</h2>
+        <span class="price">$25</span>
+        <i id="add-cart" class="fa-solid fa-cart-shopping add-cart "></i>
+      </div>
+      <!-- box 2 -->
+      <div class="product-box">
+        <img src="https://songlongmedia.com/media/product/2984_01_tw_e3b_black.jpg" alt="" class="product-img">
+        <h2 class="product-title">WIRELESS EARBUDS</h2>
+        <span class="price">$55</span>
+        <i id="add-cart" class="fa-solid fa-cart-shopping add-cart"></i>
+      </div>
+      <!-- box 3 -->
+      <div class="product-box">
+        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/092/products/adidas-utilitas-hooded-parka-gt1699-01.jpg" alt="" class="product-img">
+        <h2 class="product-title">HOODED PARKA</h2>
+        <span class="price">$75</span>
+        <i id="add-cart" class="fa-solid fa-cart-shopping add-cart"></i>
+      </div>
+      <!-- box 4 -->
+      <div class="product-box">
+        <img src="https://bizweb.dktcdn.net/100/410/787/products/58.png?v=1684209466403" alt="" class="product-img">
+        <h2 class="product-title">STRAW METAL BOTTLE</h2>
+        <span class="price">$15</span>
+        <i id="add-cart" class="fa-solid fa-cart-shopping add-cart"></i>
+      </div>
+      <!-- box 5 -->
+      <div class="product-box">
+        <img src="https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/news/content/2023/11/kinh-mat-nam-versace-gunmetal-sunglasses-2242-1001-6g-3n-8-jpg-1700642675-22112023154435.jpg" alt="" class="product-img">
+        <h2 class="product-title">SILVER METAL</h2>
+        <span class="price">$35</span>
+        <i id="add-cart" class="fa-solid fa-cart-shopping add-cart"></i>
+      </div>
+      <!-- box 6 -->
+      <div class="product-box">
+        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/4b53a0c3c15e4ea19401a88a00400be4_9366/Relaxed_Strap-Back_Hat_Black_BH7137_02_standard_hover.jpg" alt="" class="product-img">
+        <h2 class="product-title">BACK HAT</h2>
+        <span class="price">$25</span>
+        <i id="add-cart" class="fa-solid fa-cart-shopping add-cart"></i>
+      </div>
+      <!-- box 7 -->
+      <div class="product-box">
+        <img src="https://product.hstatic.net/1000365849/product/modern_backpack-nau_1_1.5_a43f7b0378514565ae08f088a877e40a_1024x1024.jpg" alt="" class="product-img">
+        <h2 class="product-title">BACKPACK</h2>
+        <span class="price">$25</span>
+        <i id="add-cart" class="fa-solid fa-cart-shopping add-cart"></i>
+      </div>
+      <!-- box 8 -->
+      <div class="product-box">
+        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ba2e2cad8bc468bb001af160002bb95_9366/Giay_Ultraboost_1.0_DJen_HQ4201_01_standard.jpg" alt="" class="product-img">
+        <h2 class="product-title">UL TRABOOST</h2>
+        <span class="price">$45</span>
+        <i id="add-cart" class="fa-solid fa-cart-shopping add-cart"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- link to js -->
+  <script src="index.js"></script>
+</body>
+</html>
